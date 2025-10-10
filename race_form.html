@@ -1,0 +1,57 @@
+<!-- Create a race registration form with following requirements
+1. Use appropriate labels
+2. First Name -> text -> required 
+3. Last Name -> text -> required
+4. Radio input to select race type
+5. Email
+6. Password
+7. Drop down to select age group
+8. Register button -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+<h1>Race Registration!</h1>
+<form action="">
+    <div>
+        <label for="first">First Name</label>
+        <input type="text" id="first" name="first" required>
+        <label for="last">Last Name</label>
+        <input type="text" id="last" name="last" required>
+    </div>
+
+    <p>Select a race:</p>
+    <div>
+        <label for="fun" >Fun Run 5km</label>
+        <input type="radio" name="type" id="fun" value="fun">
+        <br>
+        <label for="half">Half Marathon</label>
+        <input type="radio" name="type" id="half" value="half">
+        <br>
+        <label for="full">Full Marathon</label>
+        <input type="radio"  name="type"id="full" value="full">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <label for="age">Select age group</label>
+        <select name="age" id="age">
+            <option value="kids" selected>under 18</option>
+            <option value="youth" >18-30</option>
+            <option value="adults">30-50</option>
+            <option value="seniors">50+</option>
+        </select>
+    </div>
+
+    <button>Register!</button>
+</form>    
+</body>
+</html>
